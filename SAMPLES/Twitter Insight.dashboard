@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="layoutPreference">auto layout</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">ThemesReportItems.rptlibrary</property>
+            <property name="namespace">ThemesReportItems</property>
+        </structure>
+    </list-property>
+    <property name="dashboardView">
+        <dashboard id="2">
+            <property name="activeTab">e0855711-9ee3-4a23-a5ce-6873d6b29ca7</property>
+            <property name="tabs">
+                <tab-element name="865a6848-1dac-4127-8164-02b9987b951e" id="33">
+                    <property name="title">Social Insight</property>
+                    <property name="sections">
+                        <section id="34">
+                            <property name="width">58.75912408759124%</property>
+                            <property name="gadgets">
+                                <gadget name="Gadget_29f477e3-8c5d-4667-a6d5-58aad500e60a" id="42">
+                                    <property name="height">50px</property>
+                                    <property name="title">Enter Search Term Or Hashtag</property>
+                                    <property name="showTitle">true</property>
+                                    <property name="showBorder">true</property>
+                                    <property name="zIndex">1</property>
+                                    <property name="height">50px</property>
+                                    <property name="caption">
+                                        <gadget-caption id="43">
+                                            <property name="showCaption">true</property>
+                                            <property name="horizontalAlignment">left</property>
+                                            <property name="fontFamily">"Source Sans Pro"</property>
+                                            <property name="fontSize">18pt</property>
+                                            <property name="fontWeight">normal</property>
+                                            <property name="fontStyle">normal</property>
+                                            <property name="color">#353535</property>
+                                            <property name="textUnderline">none</property>
+                                        </gadget-caption>
+                                    </property>
+                                    <property name="content">
+                                        <dropdown-data-selector id="44">
+                                            <property name="externalContentRef">
+                                                <external-element-ref>
+                                                    <property name="sourceFile">/Samples/TwitterODA.rptdesign</property>
+                                                    <property name="targetBookmark">query</property>
+                                                    <property name="isNoValueSupported">false</property>
+                                                </external-element-ref>
+                                            </property>
+                                            <property name="operator">eq</property>
+                                            <property name="controlType">text-box</property>
+                                            <property name="dataType">string</property>
+                                            <simple-property-list name="selectedValues">
+                                                <value>#Citi</value>
+                                            </simple-property-list>
+                                            <property name="allowTyping">false</property>
+                                            <property name="autoSuggest">false</property>
+                                            <property name="listLimit">1000</property>
+                                            <expression name="defaultValue" type="javascript">#Citi</expression>
+                                        </dropdown-data-selector>
+                                    </property>
+                                    <property name="observers">
+                                        <event-subscriber>
+                                            <property name="eventName">SELECT_EVENT:SEMANTIC_filter</property>
+                                            <property name="eventObjects">
+                                                <event-object>
+                                                    <property name="gadget">a056d6ba-d479-4019-a055-fb299b8366dd</property>
+                                                    <property name="dirty">false</property>
+                                                </event-object>
+                                            </property>
+                                        </event-subscriber>
+                                        <event-subscriber>
+                                            <property name="eventName">SELECT_EVENT:SEMANTIC_parameter</property>
+                                            <property name="eventObjects">
+                                                <event-object>
+                                                    <property name="appliedTo">query</property>
+                                                    <property name="gadget">Gadget_70dbcb83-6ae7-44d2-b709-731c0f438564</property>
+                                                    <property name="dirty">false</property>
+                                                </event-object>
+                                                <event-object>
+                                                    <property name="appliedTo">query</property>
+                                                    <property name="gadget">Gadget_aac4d55b-0b5d-4dff-9d67-c185e7376e6a</property>
+                                                    <property name="dirty">false</property>
+                                                </event-object>
+                                                <event-object>
+                                                    <property name="appliedTo">query</property>
+                                                    <property name="gadget">Gadget_df296fc0-7eb1-46bf-8c6a-ef7e9a57d7d9</property>
+                                                    <property name="dirty">false</property>
+                                                </event-object>
+                                            </property>
+                                        </event-subscriber>
+                                    </property>
+                                </gadget>
+                                <gadget name="Gadget_aac4d55b-0b5d-4dff-9d67-c185e7376e6a" id="48">
+                                    <property name="title">Tweet Traffic</property>
+                                    <property name="externalGadgetURI">/Samples/TwitterODA.rptdesign</property>
+                                    <property name="showTitle">true</property>
+                                    <property name="showBorder">true</property>
+                                    <property name="zIndex">3</property>
+                                    <property name="showScrollBar">false</property>
+                                    <property name="caption">
+                                        <gadget-caption id="49">
+                                            <property name="showCaption">false</property>
+                                            <property name="horizontalAlignment">left</property>
+                                            <property name="fontFamily">"Source Sans Pro"</property>
+                                            <property name="fontSize">18pt</property>
+                                            <property name="fontWeight">normal</property>
+                                            <property name="fontStyle">normal</property>
+                                            <property name="color">#353535</property>
+                                            <property name="textUnderline">none</property>
+                                        </gadget-caption>
+                                    </property>
+                                    <property name="content">
+                                        <data-view id="50">
+                                            <list-property name="userProperties">
+                                                <structure>
+                                                    <property name="name">showViewerToolbar</property>
+                                                    <property name="type">boolean</property>
+                                                </structure>
+                                            </list-property>
+                                            <property name="showViewerToolbar">true</property>
+                                            <property name="gadgetType">viewer</property>
+                                            <property name="externalContentRef">
+                                                <external-element-ref>
+                                                    <property name="sourceFile">/Samples/TwitterODA.rptdesign</property>
+                                                    <property name="targetBookmark">history</property>
+                                                </external-element-ref>
+                                            </property>
+                                            <property name="paramSettings">
+                                                <param-setting>
+                                                    <property name="paramName">query</property>
+                                                    <expression name="value">#Eclipse</expression>
+                                                    <property name="isHidden">true</property>
+                                                    <expression name="defaultValue" type="javascript">#Eclipse</expression>
+                                                </param-setting>
+                                                <param-setting>
+                                                    <property name="paramName">resultType</property>
+                                                    <expression name="value">mixed</expression>
+                                                    <property name="isHidden">true</property>
+                                                    <expression name="defaultValue" type="javascript">mixed</expression>
+                                                </param-setting>
+                                                <param-setting>
+                                                    <property name="paramName">maxEntries</property>
+                                                    <expression name="value">50</expression>
+                                                    <property name="isHidden">true</property>
+                                                    <expression name="defaultValue" type="javascript">50</expression>
+                                                </param-setting>
+                                            </property>
+                                        </data-view>
+                                    </property>
+                                    <property name="subscribeTo">
+                                        <event-subscriber>
+                                            <property name="eventName">SELECT_EVENT:SEMANTIC_parameter</property>
+                                            <property name="eventObjects">
+                                                <event-object>
+                                                    <property name="appliedTo">query</property>
+                                                    <property name="gadget">Gadget_29f477e3-8c5d-4667-a6d5-58aad500e60a</property>
+                                                    <property name="dirty">false</property>
+                                                </event-object>
+                                                <event-object>
+                                                    <property name="appliedTo">maxEntries</property>
+                                                    <property name="gadget">Gadget_8faaacff-ce24-4936-853b-859c44234f37</property>
+                                                    <property name="dirty">false</property>
+                                                </event-object>
+                                            </property>
+                                        </event-subscriber>
+                                    </property>
+                                </gadget>
+                                <gadget name="a056d6ba-d479-4019-a055-fb299b8366dd" id="36">
+                                    <property name="height">150px</property>
+                                    <property name="zIndex">1</property>
+                                    <property name="isVisible">false</property>
+                                    <property name="height">150px</property>
+                                    <property name="caption">
+                                        <gadget-caption id="38">
+                                            <property name="showCaption">true</property>
+                                            <property name="horizontalAlignment">left</property>
+                                            <property name="fontFamily">"Source Sans Pro"</property>
+                                            <property name="fontSize">24pt</property>
+                                            <property name="fontWeight">bold</property>
+                                            <property name="color">#000000</property>
+                                        </gadget-caption>
+                                    </property>
+                                    <property name="content">
+                                        <current-selections id="37"/>
+                                    </property>
+                                    <property name="subscribeTo">
+                                        <event-subscriber>
+                                            <property name="eventName">SELECT_EVENT:SEMANTIC_filter</property>
+                                            <property name="eventObjects">
+                                                <event-object>
+                                                    <property name="gadget">Gadget_29f477e3-8c5d-4667-a6d5-58aad500e60a</property>
+                                                    <property name="dirty">false</property>
+                                                </event-object>
+                                                <event-object>
+                                                    <property name="gadget">Gadget_8faaacff-ce24-4936-853b-859c44234f37</property>
+                                                    <property name="dirty">false</property>
+                                                </event-object>
+                                            </property>
+                                        </event-subscriber>
+                                    </property>
+                                </gadget>
+                            </property>
+                        </section>
+                        <section id="35">
+                            <property name="width">41.24087591240876%</property>
+                            <property name="gadgets">
+                                <gadget name="Gadget_8faaacff-ce24-4936-853b-859c44234f37" id="45">
+                                    <property name="height">50px</property>
+                                    <property name="title">Max Tweets</property>
+                                    <property name="showTitle">true</property>
+                                    <property name="showBorder">true</property>
+                                    <property name="zIndex">1</property>
+                                    <property name="height">50px</property>
+                                    <property name="caption">
+                                        <gadget-caption id="46">
+                                            <property name="showCaption">true</property>
+                                            <property name="horizontalAlignment">left</property>
+                                            <property name="fontFamily">"Source Sans Pro"</property>
+                                            <property name="fontSize">18pt</property>
+                                            <property name="fontWeight">normal</property>
+                                            <property name="fontStyle">normal</property>
+                                            <property name="color">#353535</property>
+                                            <property name="textUnderline">none</property>
+                                        </gadget-caption>
+                                    </property>
+                                    <property name="content">
+                                        <dropdown-data-selector id="47">
+                                            <property name="externalContentRef">
+                                                <external-element-ref>
+                                                    <property name="sourceFile">/Samples/TwitterODA.rptdesign</property>
+                                                    <property name="targetBookmark">maxEntries</property>
+                                                    <property name="isNoValueSupported">true</property>
+                                                </external-element-ref>
+                                            </property>
+                                            <property name="operator">eq</property>
+                                            <property name="controlType">text-box</property>
+                                            <property name="dataType">integer</property>
+                                            <simple-property-list name="selectedValues">
+                                                <value>50</value>
+                                            </simple-property-list>
+                                            <property name="allowTyping">false</property>
+                                            <property name="autoSuggest">false</property>
+                                            <property name="listLimit">1000</property>
+                                            <expression name="defaultValue" type="javascript">50</expression>
+                                        </dropdown-data-selector>
+                                    </property>
+                                    <property name="observers">
+                                        <event-subscriber>
+                                            <property name="eventName">SELECT_EVENT:SEMANTIC_filter</property>
+                                            <property name="eventObjects">
+                                                <event-object>
+                                                    <property name="gadget">a056d6ba-d479-4019-a055-fb299b8366dd</property>
+                                                    <property name="dirty">false</property>
+                                                </event-object>
+                                            </property>
+                                        </event-subscriber>
+                                        <event-subscriber>
+                                            <property name="eventName">SELECT_EVENT:SEMANTIC_parameter</property>
+                                            <property name="eventObjects">
+                                                <event-object>
+                                                    <property name="appliedTo">maxEntries</property>
+                                                    <property name="gadget">Gadget_70dbcb83-6ae7-44d2-b709-731c0f438564</property>
+                                                    <property name="dirty">false</property>
+                                                </event-object>
+                                                <event-object>
+                                                    <property name="appliedTo">maxEntries</property>
+                                                    <property name="gadget">Gadget_aac4d55b-0b5d-4dff-9d67-c185e7376e6a</property>
+                                                    <property name="dirty">false</property>
+                                                </event-object>
+                                                <event-object>
+                                                    <property name="appliedTo">maxEntries</property>
+                                                    <property name="gadget">Gadget_df296fc0-7eb1-46bf-8c6a-ef7e9a57d7d9</property>
+                                                    <property name="dirty">false</property>
+                                                </event-object>
+                                            </property>
+                                        </event-subscriber>
+                                    </property>
+                                </gadget>
+                                <gadget name="Gadget_df296fc0-7eb1-46bf-8c6a-ef7e9a57d7d9" id="51">
+                                    <property name="title">Whos Tweeting?</property>
+                                    <property name="externalGadgetURI">/Samples/TwitterODA.rptdesign</property>
+                                    <property name="showTitle">true</property>
+                                    <property name="showBorder">true</property>
+                                    <property name="zIndex">4</property>
+                                    <property name="showScrollBar">false</property>
+                                    <property name="caption">
+                                        <gadget-caption id="52">
+                                            <property name="showCaption">false</property>
+                                            <property name="horizontalAlignment">left</property>
+                                            <property name="fontFamily">"Source Sans Pro"</property>
+                                            <property name="fontSize">18pt</property>
+                                            <property name="fontWeight">normal</property>
+                                            <property name="fontStyle">normal</property>
+                                            <property name="color">#353535</property>
+                                            <property name="textUnderline">none</property>
+                                        </gadget-caption>
+                                    </property>
+                                    <property name="content">
+                                        <data-view id="53">
+                                            <list-property name="userProperties">
+                                                <structure>
+                                                    <property name="name">showViewerToolbar</property>
+                                                    <property name="type">boolean</property>
+                                                </structure>
+                                            </list-property>
+                                            <property name="showViewerToolbar">true</property>
+                                            <property name="gadgetType">viewer</property>
+                                            <property name="externalContentRef">
+                                                <external-element-ref>
+                                                    <property name="sourceFile">/Samples/TwitterODA.rptdesign</property>
+                                                    <property name="targetBookmark">top25</property>
+                                                </external-element-ref>
+                                            </property>
+                                            <property name="paramSettings">
+                                                <param-setting>
+                                                    <property name="paramName">query</property>
+                                                    <expression name="value">#Eclipse</expression>
+                                                    <property name="isHidden">true</property>
+                                                    <expression name="defaultValue" type="javascript">#Eclipse</expression>
+                                                </param-setting>
+                                                <param-setting>
+                                                    <property name="paramName">resultType</property>
+                                                    <expression name="value">mixed</expression>
+                                                    <property name="isHidden">true</property>
+                                                    <expression name="defaultValue" type="javascript">mixed</expression>
+                                                </param-setting>
+                                                <param-setting>
+                                                    <property name="paramName">maxEntries</property>
+                                                    <expression name="value">50</expression>
+                                                    <property name="isHidden">true</property>
+                                                    <expression name="defaultValue" type="javascript">50</expression>
+                                                </param-setting>
+                                            </property>
+                                        </data-view>
+                                    </property>
+                                    <property name="subscribeTo">
+                                        <event-subscriber>
+                                            <property name="eventName">SELECT_EVENT:SEMANTIC_parameter</property>
+                                            <property name="eventObjects">
+                                                <event-object>
+                                                    <property name="appliedTo">query</property>
+                                                    <property name="gadget">Gadget_29f477e3-8c5d-4667-a6d5-58aad500e60a</property>
+                                                    <property name="dirty">false</property>
+                                                </event-object>
+                                                <event-object>
+                                                    <property name="appliedTo">maxEntries</property>
+                                                    <property name="gadget">Gadget_8faaacff-ce24-4936-853b-859c44234f37</property>
+                                                    <property name="dirty">false</property>
+                                                </event-object>
+                                            </property>
+                                        </event-subscriber>
+                                    </property>
+                                </gadget>
+                            </property>
+                        </section>
+                    </property>
+                    <property name="freeFormGadgets">
+                        <gadget name="Gadget_70dbcb83-6ae7-44d2-b709-731c0f438564" id="39">
+                            <property name="x">10px</property>
+                            <property name="y">653px</property>
+                            <property name="height">500px</property>
+                            <property name="width">1357px</property>
+                            <property name="title">Tweets</property>
+                            <property name="externalGadgetURI">/Samples/TwitterODA.rptdesign</property>
+                            <property name="showTitle">true</property>
+                            <property name="showBorder">true</property>
+                            <property name="zIndex">5</property>
+                            <property name="showScrollBar">false</property>
+                            <property name="height">500px</property>
+                            <property name="width">1357px</property>
+                            <property name="caption">
+                                <gadget-caption id="40">
+                                    <property name="showCaption">false</property>
+                                    <property name="horizontalAlignment">left</property>
+                                    <property name="fontFamily">"Source Sans Pro"</property>
+                                    <property name="fontSize">18pt</property>
+                                    <property name="fontWeight">normal</property>
+                                    <property name="fontStyle">normal</property>
+                                    <property name="color">#353535</property>
+                                    <property name="textUnderline">none</property>
+                                </gadget-caption>
+                            </property>
+                            <property name="content">
+                                <data-view id="41">
+                                    <list-property name="userProperties">
+                                        <structure>
+                                            <property name="name">showViewerToolbar</property>
+                                            <property name="type">boolean</property>
+                                        </structure>
+                                    </list-property>
+                                    <property name="showViewerToolbar">true</property>
+                                    <property name="gadgetType">viewer</property>
+                                    <property name="externalContentRef">
+                                        <external-element-ref>
+                                            <property name="sourceFile">/Samples/TwitterODA.rptdesign</property>
+                                            <property name="targetBookmark">TweetText</property>
+                                        </external-element-ref>
+                                    </property>
+                                    <property name="paramSettings">
+                                        <param-setting>
+                                            <property name="paramName">query</property>
+                                            <expression name="value">#Eclipse</expression>
+                                            <property name="isHidden">true</property>
+                                            <expression name="defaultValue" type="javascript">#Eclipse</expression>
+                                        </param-setting>
+                                        <param-setting>
+                                            <property name="paramName">resultType</property>
+                                            <expression name="value">mixed</expression>
+                                            <property name="isHidden">true</property>
+                                            <expression name="defaultValue" type="javascript">mixed</expression>
+                                        </param-setting>
+                                        <param-setting>
+                                            <property name="paramName">maxEntries</property>
+                                            <expression name="value">50</expression>
+                                            <property name="isHidden">true</property>
+                                            <expression name="defaultValue" type="javascript">50</expression>
+                                        </param-setting>
+                                    </property>
+                                </data-view>
+                            </property>
+                            <property name="subscribeTo">
+                                <event-subscriber>
+                                    <property name="eventName">SELECT_EVENT:SEMANTIC_parameter</property>
+                                    <property name="eventObjects">
+                                        <event-object>
+                                            <property name="appliedTo">query</property>
+                                            <property name="gadget">Gadget_29f477e3-8c5d-4667-a6d5-58aad500e60a</property>
+                                            <property name="dirty">false</property>
+                                        </event-object>
+                                        <event-object>
+                                            <property name="appliedTo">maxEntries</property>
+                                            <property name="gadget">Gadget_8faaacff-ce24-4936-853b-859c44234f37</property>
+                                            <property name="dirty">false</property>
+                                        </event-object>
+                                    </property>
+                                </event-subscriber>
+                            </property>
+                        </gadget>
+                    </property>
+                </tab-element>
+            </property>
+        </dashboard>
+    </property>
+</report>

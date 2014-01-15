@@ -1,0 +1,31 @@
+To deploy the ODA to BRDPro:
+
+copy both .jar file plugins to:
+
+MyClasses\eclipse\plugins
+
+folder under BRDPro install home directory. 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To deploy the ODA to iHub2:
+
+copy only the 'com.actuate.birt.labs.data.oda.twitter_1.1.0.v20130805.jar' file plugin to:
+
+iHub2\MyClasses\eclipse\plugins
+
+folder under the iHub2 install home directory.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To deploy the Twitter Dashboard to iHub:
+
+1. Publish 'TwitterODA.rptdesign' to the iHub into a folder called /Samples, assign appropriate permissions to VIEW and EXECUTE
+2. Publish 'Twitter Insight.dashboard' to the iHub into /Dashboard, assign appropriate permissions to VIEW and EXECUTE
+3. Login to Actuate Information Console, browse to /Dashboard folder and launch 'Twitter Insight.dashboard'
+
+NOTE! there's no profanity filter on this dashboard, choose search terms wisely when demo'ing! ;-)
+
+
+
