@@ -1,20 +1,19 @@
-To deploy the ODA to BRDPro:
+To deploy the ODA ihub3:
 
-copy both .jar file plugins to:
+Designer:	Copy both files to c:\Actuate\BDPro\oda\eclipse\plugins
 
-MyClasses\eclipse\plugins
+ihub3: 		Copy just com.actuate.birt.labs.data.twitter_x to  (the one WITHOUT the .ui)
+			to C:\Actuate\iHub3\modules\BIRTiHub\iHub\MyClasses\eclipse\plugins   
 
-folder under BRDPro install home directory. 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To deploy the ODA to iHub2:
 
-copy only the 'com.actuate.birt.labs.data.oda.twitter_1.1.0.v20130805.jar' file plugin to:
+Designer:	Copy both files to c:\<program files (x86)\Actuate\oda\eclipse\plugins
 
-iHub2\MyClasses\eclipse\plugins
-
-folder under the iHub2 install home directory.
+copy only the 'com.actuate.birt.labs.data.oda.twitter_1.1.0.v20130805.jar' file to:
+       iHub2\MyClasses\eclipse\plugins
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

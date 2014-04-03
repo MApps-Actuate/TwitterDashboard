@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
-    <property name="createdBy">Eclipse BIRT Designer Version 4.2.3.v20131125-0430 Build &lt;4.2.3.v20131125-0430></property>
+    <property name="createdBy">Eclipse BIRT Designer Version 4.2.3.v20131216-0430 Build &lt;4.2.3.v20131216-0430></property>
     <list-property name="propertyBindings">
         <structure>
             <property name="name">resultType</property>
@@ -32,7 +32,7 @@
             <property name="dataType">string</property>
             <property name="distinct">true</property>
             <simple-property-list name="defaultValue">
-                <value type="constant">#Eclipse</value>
+                <value type="constant">#twitter</value>
             </simple-property-list>
             <list-property name="selectionList"/>
             <property name="paramType">simple</property>

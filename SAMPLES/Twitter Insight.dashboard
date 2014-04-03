@@ -9,7 +9,7 @@
     </list-property>
     <property name="dashboardView">
         <dashboard id="2">
-            <property name="activeTab">e0855711-9ee3-4a23-a5ce-6873d6b29ca7</property>
+            <property name="activeTab">865a6848-1dac-4127-8164-02b9987b951e</property>
             <property name="tabs">
                 <tab-element name="865a6848-1dac-4127-8164-02b9987b951e" id="33">
                     <property name="title">Social Insight</property>
@@ -49,7 +49,7 @@
                                             <property name="controlType">text-box</property>
                                             <property name="dataType">string</property>
                                             <simple-property-list name="selectedValues">
-                                                <value>#Citi</value>
+                                                <value>#twitter</value>
                                             </simple-property-list>
                                             <property name="allowTyping">false</property>
                                             <property name="autoSuggest">false</property>
